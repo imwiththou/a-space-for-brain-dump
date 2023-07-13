@@ -1,11 +1,14 @@
 import Link from "next/link"
 import "./globals.css"
-import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 
-const inter = Inter ({ subsets: ["latin"] })
+import { Inter } from 'next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'] })
+
 
 
 export const metadata = {
