@@ -7,7 +7,7 @@ import { ModeToggle } from "@/components/mode-toggle"
 
 //const SFPro = localfont({ subsets: ["latin"] })
 
-const myFont = localFont({ src: './public/SF-Pro.ttf' })
+const myFont = localFont({ src: './fonts/SF-Pro.ttf' })
 
 export default function MyApp({ Component, pageProps }) {
   return (
