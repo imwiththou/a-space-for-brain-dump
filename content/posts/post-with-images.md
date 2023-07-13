@@ -6,11 +6,10 @@ date: "2023-07-13"
 
 This is a test to display images in markdown with various settings.
 
-
 ## Setting 3: Normal HTML syntax
 
 Using normal HTML syntax:
 
-`<Image class="rounded-lg" src="/blog-post-4.jpg" width="600" alt="Image" />`
+`<Image class="rounded-lg shadow-xs" src="/blog-post-4.jpg" width="600" alt="Image"/>`
 
-<Image class="rounded-lg shadow-xs" src="/blog-post-4.jpg" width="600" alt="Image" />
+<Image class="rounded-lg shadow-xs" src="/blog-post-4.jpg" width="600" alt="Image"/>

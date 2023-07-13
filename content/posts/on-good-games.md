@@ -1,0 +1,7 @@
+---
+title: On good games
+description: Games are not always bad for you.
+date: "2023-07-12"
+---
+
+When I grew up I was often told to avoid video games as they were addictive and could potential ruin my study and career (in the future). This is a typical Asian parents’ misunderstanding on video games. Games are a form of art. Good games not just relax people but also inspire them. They make us to think our existence as human being.
