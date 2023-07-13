@@ -30,8 +30,8 @@ export const Page = defineDocumentType(() => ({
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `posts/**/*.md`,
-  contentType: "md",
+  filePathPattern: `posts/**/*.mdx`,
+  contentType: "mdx",
   fields: {
     title: {
       type: "string",
