@@ -58,7 +58,7 @@ export default async function PostPage({ params }: PostProps) {
         </p>
       )}
       <span>
-        {post.date.toLocaleString()}
+        {post.date.toDateString()}
       </span>
       <hr className="my-4" />
       <Mdx code={post.body.code} />
