@@ -1,6 +1,6 @@
 import Link from "next/link"
 import "./globals.css"
-import localfont from "next/font/local"
+import localFont from "next/font/local"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
@@ -9,7 +9,7 @@ import { ModeToggle } from "@/components/mode-toggle"
 
 const myFont = localFont({ src: './fonts/SF-Pro.ttf' })
 
-export default function MyApp({ Component, pageProps }) {
+export function MyApp({ Component, pageProps }) {
   return (
     <main className={myFont.className}>
       <Component {...pageProps} />
