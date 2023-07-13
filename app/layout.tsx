@@ -1,21 +1,12 @@
 import Link from "next/link"
 import "./globals.css"
-import localFont from "next/font/local"
+import { Inter }} from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 
-//const SFPro = localfont({ subsets: ["latin"] })
+const Inter = localfont({ subsets: ["latin"] })
 
-const myFont = localFont({ src: './fonts/SF-Pro.ttf' })
-
-export function MyApp({ Component, pageProps }) {
-  return (
-    <main className={myFont.className}>
-      <Component {...pageProps} />
-    </main>
-  )
-}
 
 export const metadata = {
   title: "Space for brain dump",
