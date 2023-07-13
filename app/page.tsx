@@ -19,7 +19,7 @@ export default function Home() {
           </Link>
           {post.description && 
           <p>{post.description}</p> 
-          <p>{new Date(post.date).toDateString()}</p>
+//        <p>{new Date(post.date).toDateString()}</p>
           }
         </article>
       ))}
