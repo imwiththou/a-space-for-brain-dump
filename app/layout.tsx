@@ -38,6 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
+            <span>&copy; Steve 3202. All rights reserved.</span>
           </div>
           <Analytics />
         </ThemeProvider>
