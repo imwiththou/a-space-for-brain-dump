@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 export const metadata = {
-  title: "Space for brain dump",
-  description: "Don't take things too seriously",
+  title: "A space for brain dump",
+  description: "Don't take them too seriously, though ideas are extremely frigile.",
 }
 
 interface RootLayoutProps {
@@ -38,6 +38,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
               </div>
             </header>
             <main>{children}</main>
+            <br></br>
+            <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 3202. All rights reserved.</span>
           </div>
           <Analytics />
         </ThemeProvider>
