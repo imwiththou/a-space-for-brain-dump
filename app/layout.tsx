@@ -37,9 +37,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main>{children}</main>
+            <main>
+              {children}
             <br></br>
             <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 3202. All rights reserved.</span>
+            </main>
+            
           </div>
           <Analytics />
         </ThemeProvider>
