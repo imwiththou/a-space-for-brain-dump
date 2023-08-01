@@ -3790,7 +3790,7 @@ packages:
       levn: 0.4.1
       prelude-ls: 1.2.1
       type-check: 0.4.0
-      word-wrap: 1.2.4
+      word-wrap: 1.2.3
     dev: false
 
   /p-limit/3.1.0:
@@ -4803,7 +4803,7 @@ packages:
       isexe: 2.0.0
     dev: false
 
-  /word-wrap/1.2.4:
+  /word-wrap/1.2.3:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
     engines: {node: '>=0.10.0'}
     dev: false
