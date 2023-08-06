@@ -5,8 +5,6 @@
 .video_wrapper {
     position: relative;
     padding-bottom: 61.8%; /* golden radio */ 
-    border-radius: rounded-md;
-    box-shadow: shadow-2xl;
     }
     iframe{
     position: absolute;
