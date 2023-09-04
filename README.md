@@ -1,5 +1,7 @@
-# Next.js + Contentlayer
+`Next.js + Contentlayer`
 
-A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.
+# A space for brain dump
 
-https://next-contentlayer.vercel.app
+Custimised and modified as a personal blog space by Steve.
+
+This web app is deployed via https://next-contentlayer.vercel.app
