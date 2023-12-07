@@ -50,5 +50,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </ThemeProvider>
       </body>
     </html>
-  )
+   )
 }
