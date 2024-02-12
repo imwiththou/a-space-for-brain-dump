@@ -1,2 +1,28 @@
-# a-space-for-brain-dump
- the next phase of brain dumpping, brand new with Ruby
+# README
+
+##  a-space-for-brain-dump
+
+The next phase of brain dumpping, brand new with Ruby
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
