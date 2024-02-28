@@ -2,6 +2,7 @@
   "name": "next-contentlayer",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@7.5.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,7 +20,7 @@
     "contentlayer": "^0.3.2",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
-    "next": "13.4.1",
+    "next": "^13.5.6",
     "next-contentlayer": "^0.3.2",
     "next-themes": "^0.2.1",
     "postcss": "8.4.31",
