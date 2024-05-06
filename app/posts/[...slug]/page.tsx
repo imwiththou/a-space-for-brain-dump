@@ -57,12 +57,17 @@ export default async function PostPage({ params }: PostProps) {
           {post.description}
         </p>
       )}
+
       <span className="text-xs text-grey-500/50 uppercase" >
         {new Date(post.date).toDateString()}
       </span>
-      <span className="text-xs text-grey-500/50 uppercase">
+
+      {post.tag && (
+        <p class ="*:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 ...">
         {post.tag}
-      </span>
+      </p>
+      )}
+
       <hr className="my-4" />
       <Mdx code={post.body.code} />
     </article>
