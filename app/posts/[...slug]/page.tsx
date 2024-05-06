@@ -33,7 +33,6 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.description,
-    tag: post.tag,
   }
 }
 
@@ -62,12 +61,6 @@ export default async function PostPage({ params }: PostProps) {
       <span className="text-xs text-grey-500/50 uppercase" >
         {new Date(post.date).toDateString()}
       </span>
-
-      {post.tag && (
-        <p class ="*:rounded-full *:border *:border-sky-100 *:bg-sky-50 *:px-2 *:py-0.5 dark:text-sky-300 dark:*:border-sky-500/15 dark:*:bg-sky-500/10 ...">
-        {post.tag}
-      </p>
-      )}
 
       <hr className="my-4" />
       <Mdx code={post.body.code} />
