@@ -60,6 +60,9 @@ export default async function PostPage({ params }: PostProps) {
       <span className="text-xs text-grey-500/50 uppercase" >
         {new Date(post.date).toDateString()}
       </span>
+      <span className="text-xs text-grey-500/50 uppercase">
+        {post.tag}
+      </span>
       <hr className="my-4" />
       <Mdx code={post.body.code} />
     </article>
