@@ -1,4 +1,6 @@
-// lib/posts.ts (or .js)
+// lib/posts.ts
+
+// Mock implementation of fetching posts. Replace with your actual data fetching logic.
 export async function getPosts(page: number, limit: number) {
     const allPosts = await fetchAllPosts(); // Replace with actual data fetching logic
     const totalPosts = allPosts.length;
