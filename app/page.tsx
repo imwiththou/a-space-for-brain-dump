@@ -1,56 +1,28 @@
-import { useState, useEffect } from 'react';
+import { allPosts } from "@/.contentlayer/generated"
+import Link from "next/link"
 
-const BlogPage = () => {
-  const [posts, setPosts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
-  const limit = 12;
-
-  useEffect(() => {
-    fetchPosts(currentPage);
-  }, [currentPage]);
-
-  const fetchPosts = async (page) => {
-    const response = await fetch(`/api/posts?page=${page}&limit=${limit}`);
-    const data = await response.json();
-    setPosts(data.posts);
-    setTotalPages(data.totalPages);
-  };
-
-  const handleNextPage = () => {
-    if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+export default function Home() {
+  const sortedPosts = allPosts.sort((a, b) => {
+    if (a.date > b.date) {
+      return -1
+    } else {
+      return 1
     }
-  };
-
-  const handlePreviousPage = () => {
-    if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
+  })
 
   return (
-    <div>
-      <h1>Blog</h1>
-      <div>
-        {posts.map((post) => (
-          <div key={post.id}>
+    <div className="prose dark:prose-invert">
+      {sortedPosts.map((post) => (
+        <article key={post._id}>
+          <Link href={post.slug}>
             <h2>{post.title}</h2>
-            <p>{post.content}</p>
-          </div>
-        ))}
-      </div>
-      <div>
-        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
-          Previous
-        </button>
-        <span>Page {currentPage} of {totalPages}</span>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-          Next
-        </button>
-      </div>
+          </Link>
+          {post.description && 
+          <p>{post.description}</p> 
+//        <p>{new Date(post.date).toDateString()}</p>
+          }
+        </article>
+      ))}
     </div>
-  );
-};
-
-export default BlogPage;
+  )
+}
