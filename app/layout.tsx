@@ -42,7 +42,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {children}
             <br></br>
             <a href="https://notbyai.fyi"><img src="/written-by-human-not-by-ai-white.svg" alt="Written by Human, Not by AI"></img></a>
-            <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 4202. All rights reserved.</span>
+            <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 5202. All rights reserved.</span>
             </main>
             
           </div>
