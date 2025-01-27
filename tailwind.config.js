@@ -13,7 +13,8 @@ module.exports = {
         DEFAULT: {
           css: {
             blockquote: {
-              fontStyle: "light",
+              fontStyle: "normal",
+              fontWeight: "light",
               color: "text-gray-600",
             },
             'blockquote p:first-of-type::before': false,
