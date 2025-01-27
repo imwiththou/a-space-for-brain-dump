@@ -14,6 +14,7 @@ module.exports = {
           css: {
             blockquote: {
               fontStyle: "normal",
+              color: var(--color-stone-700),
             },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
