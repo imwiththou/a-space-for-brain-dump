@@ -17,7 +17,7 @@ module.exports = {
               fontWeight: "light",
               color: "text-gray-600",
               blockquote:{
-                borderLeftWidth: "0.1rem",
+                borderLeftWidth: "0.05rem",
               },
             },
             'blockquote p:first-of-type::before': false,
