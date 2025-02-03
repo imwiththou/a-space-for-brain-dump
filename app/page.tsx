@@ -14,12 +14,12 @@ export default function Home() {
     <div className="prose dark:prose-invert">
       {sortedPosts.map((post) => (
         <article key={post._id}>
+          <p>{new Date(post.date).toDateString()}</p>
           <Link href={post.slug}>
             <h2>{post.title}</h2>
           </Link>
           {post.description && 
           <p>{post.description}</p> 
-//        <p>{new Date(post.date).toDateString()}</p>
           }
         </article>
       ))}
