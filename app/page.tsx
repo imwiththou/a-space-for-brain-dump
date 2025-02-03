@@ -19,7 +19,9 @@ export default function Home() {
           </Link>
           {post.description && 
           <p>{post.description}</p> 
-//        <p>{new Date(post.date).toDateString()}</p>
+          }
+          {post.date && 
+          <p className="text-xs text-grey-500/50 uppercase">{new Date(post.date).toDateString()}</p>
           }
         </article>
       ))}
