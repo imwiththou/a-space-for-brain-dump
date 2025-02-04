@@ -51,7 +51,6 @@ export default async function PagePage({ params }: PageProps) {
 
   return (
     <article className="py-6 prose dark:prose-invert">
-      {<p className="text-xs text-grey-300/30 uppercase">new Date(post.date).toDateString()</p>}
       <h1>{page.title}</h1>
       {page.description && <p className="text-xl">{page.description}</p>}
       <hr />
