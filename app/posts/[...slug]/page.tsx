@@ -58,7 +58,7 @@ export default async function PostPage({ params }: PostProps) {
         </p>
       )}
 
-      <span className="text-xs text-grey-500/50 uppercase" >
+      <span className="text-xs text-slate-900 dark:text-slate-400 uppercase" >
         {new Date(post.date).toDateString()}
       </span>
 
