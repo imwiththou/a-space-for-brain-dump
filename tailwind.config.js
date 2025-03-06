@@ -17,7 +17,7 @@ module.exports = {
               code: {
                 fontSize: 'inherit',
               }
-            }
+            },
             blockquote: {
               fontStyle: "normal",
               fontWeight: "light",
