@@ -52,9 +52,11 @@ export default async function PagePage({ params }: PageProps) {
   return (
     <article className="py-6 prose dark:prose-invert">
       <h1>{page.title}</h1>
-      {page.description && <p className="text-xl">{page.description}</p>}
+      {page.description && <p className="text-lg">{page.description}</p>}
       <hr />
-      <Mdx code={page.body.code} />
+      <div className="text-base">
+        <Mdx code={page.body.code} />
+      </div>
     </article>
   )
 }

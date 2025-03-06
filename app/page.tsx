@@ -15,10 +15,10 @@ export default function Home() {
       {sortedPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
-            <h2>{post.title}</h2>
+            <h3>{post.title}</h3>
           </Link>
           {post.description && 
-          <p>{post.description}</p> 
+          <p className="text-sm">{post.description}</p> 
           }
           {post.date && 
           <p className="text-xs text-grey-900 dark:text-slate-400 uppercase">{new Date(post.date).toDateString()}</p>
