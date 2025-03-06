@@ -1,3 +1,4 @@
+// This file is used to configure Tailwind CSS. It is used to add custom classes, extend the default configuration, and add plugins.
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 
