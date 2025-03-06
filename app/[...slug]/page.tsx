@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
 import { allPages } from "contentlayer/generated"
-import { FigureWithCaption } from "../../components/FigureWithCaption"
+import FigureWithCaption from '../../components/FigureWithCaption'
 
 
 import { Mdx } from "@/components/mdx-components"
