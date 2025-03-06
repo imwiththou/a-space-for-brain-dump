@@ -13,12 +13,6 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            pre: {
-              fontSize: '0.8rem',
-              code: {
-                fontSize: 'inherit',
-              }
-            },
             blockquote: {
               fontStyle: "normal",
               fontWeight: "light",
