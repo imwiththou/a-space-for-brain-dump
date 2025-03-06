@@ -21,7 +21,7 @@ export default function Home() {
           <p className="text-sm">{post.description}</p> 
           }
           {post.date && 
-          <p className="text-xs text-grey-900 dark:text-slate-400 uppercase">{new Date(post.date).toDateString()}</p>
+          <p className="text-xs text-grey-900 text-opacity-50 dark:text-slate-400 uppercase">{new Date(post.date).toDateString()}</p>
           }
         </article>
       ))}
