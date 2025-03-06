@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation"
 import { allPosts } from "contentlayer/generated"
-import FigureWithCaption  from "@/components/FigureWithCaption"
 
 
 import { Metadata } from "next"
