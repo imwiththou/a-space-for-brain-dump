@@ -33,9 +33,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-xl mx-auto py-10 px-4">
+          <div className="max-w-3xl mx-auto py-10 px-4">
             <header>
-              <div className="flex items-center justify-between">
+              <div className="flex justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>
