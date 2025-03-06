@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="prose dark:prose-invert">
       {sortedPosts.map((post) => (
-        <article key={post._id}>
+        <article class="space-y-6" key={post._id}>
           <Link href={post.slug}>
             <h3>{post.title}</h3>
           </Link>
