@@ -14,7 +14,7 @@ module.exports = {
         DEFAULT: {
           css: {
             pre: {
-              fontSize: '0.9rem',
+              fontSize: '0.8rem',
               code: {
                 fontSize: 'inherit',
               }
