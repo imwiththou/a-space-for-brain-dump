@@ -6,6 +6,15 @@ import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+// Import the font
+import { Space_Grotesk } from 'next/font/google'
+ 
+// If loading a variable font, you don't need to specify the font weight
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+})
+
 // Define the metadata for the site
 export const metadata = {
   title: "A space for brain dump",
@@ -21,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className="antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50"
+        className={`antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50 ${spaceGrotesk.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-3xl mx-auto py-10 px-4">
