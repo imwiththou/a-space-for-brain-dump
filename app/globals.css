@@ -2,16 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('/fonts/FoundersGrotesk-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('/fonts/FoundersGrotesk-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('/fonts/FoundersGrotesk-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk Text';
+  src: url('/fonts/FoundersGroteskText-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk Text';
+  src: url('/fonts/FoundersGroteskText-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk Text';
+  src: url('/fonts/FoundersGroteskText-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Founders Grotesk Text', 'Inter', sans-serif;
+}
+
 .video_wrapper {
-    position: relative;
-    padding-bottom: 61.8%; /* golden ratio */ 
+  position: relative;
+  padding-bottom: 61.8%; /* golden ratio */
 }
 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .figure-container {
@@ -27,4 +79,19 @@ figure {
 img {
   width: 100%; /* Make the image responsive */
   height: auto;
+}
+
+/* Apply Founders Grotesk for text larger than 14 points */
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, a, ul, ol, li, dl, dt, dd, table, th, td, form, input, textarea, button, select {
+  font-family: 'Founders Grotesk', 'Inter', sans-serif;
+}
+
+p, blockquote, pre, code, a, ul, ol, li, dl, dt, dd, table, th, td, form, input, textarea, button, select {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  p, blockquote, pre, code, a, ul, ol, li, dl, dt, dd, table, th, td, form, input, textarea, button, select {
+    font-size: 16px;
+  }
 }
