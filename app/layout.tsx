@@ -1,4 +1,3 @@
-stevewang/Documents/GitHub/a-space-for-brain-dump/app/layout.tsx
 // Purpose: The layout component that wraps around all pages.
 import Link from "next/link"
 import "./globals.css"
@@ -45,5 +44,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </ThemeProvider>
       </body>
     </html>
-   )
+  )
 }
