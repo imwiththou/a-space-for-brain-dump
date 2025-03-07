@@ -18,7 +18,7 @@ const inter = Inter({
 // Define the metadata for the site
 export const metadata = {
   title: "A space for brain dump",
-  description: "Don't take them too seriously, though ideas are extremely frigile.",
+  description: "Don't take them too seriously, though ideas are extremely fragile.",
 }
 
 interface RootLayoutProps {
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-3xl mx-auto py-10 px-4">
-            <header>
+            <header className="w-full">
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
@@ -44,12 +44,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main>
+            <main className="w-full">
               {children}
-            <br></br>
-            <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 5202. All rights reserved.</span>
+              <br />
+              <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 5202. All rights reserved.</span>
             </main>
-            
           </div>
           <Analytics />
         </ThemeProvider>

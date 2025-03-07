@@ -15,7 +15,7 @@ export default function Home() {
       {sortedPosts.map((post) => (
         <article key={post._id}>
           <Link href={post.slug}>
-            <h3>{post.title}</h3>
+            <h4>{post.title}</h4>
           </Link>
           {post.description && 
           <p className="text-sm">{post.description}</p> 
