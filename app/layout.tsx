@@ -51,6 +51,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </main>
           </div>
           <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
