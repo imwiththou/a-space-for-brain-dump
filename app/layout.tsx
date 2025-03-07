@@ -10,7 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Host_Grotesk } from 'next/font/google'
  
 // If loading a variable font, you don't need to specify the font weight
-const spaceGrotesk = Host_Grotesk({
+const hostGrotesk = Host_Grotesk({
   subsets: ['latin'],
   variable: '--font-host-grotesk',
 })
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50 ${spaceGrotesk.className}`}
+        className={`antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50 ${hostGrotesk.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="max-w-3xl mx-auto py-10 px-4">
