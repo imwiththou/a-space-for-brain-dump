@@ -7,12 +7,12 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Import the font
-import { Space_Grotesk } from 'next/font/google'
+import { Host_Grotesk } from 'next/font/google'
  
 // If loading a variable font, you don't need to specify the font weight
-const spaceGrotesk = Space_Grotesk({
+const spaceGrotesk = Host_Grotesk({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-host-grotesk',
 })
 
 // Define the metadata for the site
