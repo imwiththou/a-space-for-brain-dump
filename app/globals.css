@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  line-height: 1.25rem;
+  line-height: 1rem;
 }
 
 .video_wrapper {
