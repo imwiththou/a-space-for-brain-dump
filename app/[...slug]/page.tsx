@@ -1,8 +1,6 @@
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
 import { allPages } from "contentlayer/generated"
-
-
 import { Mdx } from "@/components/mdx-components"
 
 interface PageProps {
@@ -55,7 +53,7 @@ export default async function PagePage({ params }: PageProps) {
       <h2>{page.title}</h2>
       {page.description && <p className="text-lg">{page.description}</p>}
       <hr />
-      <div className="text-base">
+      <div className="text-base mdx-content">
         <Mdx code={page.body.code} />
       </div>
     </article>
