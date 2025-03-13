@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  line-height: 1.25rem;
+}
+
 .video_wrapper {
     position: relative;
     padding-bottom: 61.8%; /* golden ratio */ 
 }
+
 iframe {
     position: absolute;
     top: 0;
