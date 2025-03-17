@@ -8,6 +8,10 @@ body {
   font-family: 'Copyright Klim Type Foundry', sans-serif;
 }
 
+.mdx-content {
+  font-family: 'Copyright Klim Type Foundry', sans-serif;
+}
+
 .video_wrapper {
   position: relative;
   padding-bottom: 61.8%; /* golden ratio */
