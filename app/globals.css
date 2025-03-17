@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://db.onlinewebfonts.com/c/dbd043e97b74683789e81b6c2cc2ea76?family=Copyright+Klim+Type+Foundry);
+
+body {
+  font-family: 'Copyright Klim Type Foundry', sans-serif;
+}
+
+.mdx-content {
+  font-family: 'Copyright Klim Type Foundry', sans-serif;
+
 body {
   line-height: 1.25rem;
   font-size: .9rem;
