@@ -10,6 +10,15 @@ body {
 
 .mdx-content {
   font-family: 'Copyright Klim Type Foundry', sans-serif;
+
+body {
+  line-height: 1.25rem;
+  font-size: .9rem;
+}
+
+.mdx-content {
+  line-height: 1.25rem;
+  font-size: .9rem;
 }
 
 .video_wrapper {
