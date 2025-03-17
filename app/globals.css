@@ -6,17 +6,12 @@
 
 body {
   font-family: 'Copyright Klim Type Foundry', sans-serif;
-}
-
-.mdx-content {
-  font-family: 'Copyright Klim Type Foundry', sans-serif;
-
-body {
   line-height: 1.25rem;
   font-size: .9rem;
 }
 
 .mdx-content {
+  font-family: 'Copyright Klim Type Foundry', sans-serif;
   line-height: 1.25rem;
   font-size: .9rem;
 }
