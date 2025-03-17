@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url(https://db.onlinewebfonts.com/c/dbd043e97b74683789e81b6c2cc2ea76?family=Copyright+Klim+Type+Foundry);
+
 body {
-  font-family: 'Host Grotesk', sans-serif;
+  font-family: 'Copyright Klim Type Foundry', sans-serif;
 }
 
 .video_wrapper {
   position: relative;
   padding-bottom: 61.8%; /* golden ratio */
 }
+
 iframe {
   position: absolute;
   top: 0;
