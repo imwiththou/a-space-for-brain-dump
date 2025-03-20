@@ -39,3 +39,19 @@ img {
   width: 100%; /* Make the image responsive */
   height: auto;
 }
+
+/* Add hover state for hyperlinks */
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-neutral-300); /* Default underline color */
+  transition: color 0.2s ease-in-out;
+  outline-style: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-neutral-50); /* Hover underline color */
+}
