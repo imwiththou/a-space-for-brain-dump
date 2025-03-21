@@ -57,5 +57,5 @@ a {
 
 a:hover {
   text-decoration-line: underline;
-  text-decoration-color: var(--color-neutral-50); /* Hover underline color */
+  text-decoration-color: var(--color-neutral-500); /* Hover underline color */
 }
