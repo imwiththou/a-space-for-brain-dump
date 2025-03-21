@@ -3,8 +3,8 @@
 module.exports = {
 
   content: [
-    "./app/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{md,mdx}",
   ],
   darkMode: ["class"],
@@ -37,6 +37,9 @@ module.exports = {
             },
           },
         },
+      },
+      fontFamily: {
+        sans: ['Copyright Klim Type Foundry', 'sans-serif'],
       },
     },
   },
