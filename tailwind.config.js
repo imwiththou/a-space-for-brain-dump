@@ -32,14 +32,11 @@ module.exports = {
               transition: 'color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out',
               outlineStyle: 'none',
               '&:hover': {
-                textDecorationColor: '#F9FAFB', // gray-50
+                textDecorationColor: '#6b7280', // gray-500
               },
             },
           },
         },
-      },
-      fontFamily: {
-        sans: ['Copyright Klim Type Foundry', 'sans-serif'],
       },
     },
   },
