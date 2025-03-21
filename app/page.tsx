@@ -1,6 +1,7 @@
 import { allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
 
+
 export default function Home() {
   const sortedPosts = allPosts.sort((a, b) => {
     if (a.date > b.date) {
