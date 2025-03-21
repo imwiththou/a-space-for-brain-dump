@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter } from 'next/font/google'
 
 //if loading variable font then no need to specify the weights
-const inter: Inter = ({
+const inter: Inter({
   subsets: ['latin']
 })
 
