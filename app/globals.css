@@ -5,13 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
 body {
-  font-family: 'Inter', sans-serif;
   line-height: 1.25rem;
   font-size: .9rem;
 }
 
 .mdx-content {
-  font-family: 'Inter', sans-serif;
   line-height: 1.25rem;
   font-size: .9rem;
 }
