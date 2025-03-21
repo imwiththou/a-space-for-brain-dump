@@ -26,7 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <header className="w-full">
               <div className="flex items-center justify-between">
                 <ModeToggle />
-                <nav className="ml-auto text-sm font-medium space-x-6">
+                <nav className="ml-auto text-sm font-medium space-x-6 no-underline hover:underline">
                   <Link href="/">Home</Link>
                   <Link href="/about">About</Link>
                   <Link href="/quotes">Quotes</Link>

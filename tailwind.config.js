@@ -23,6 +23,18 @@ module.exports = {
             },
             'blockquote p:first-of-type::before': false,
             'blockquote p:last-of-type::after': false,
+            a: {
+              color: 'inherit',
+              textDecorationLine: 'underline',
+              textUnderlineOffset: '2px',
+              textDecorationThickness: '2px',
+              textDecorationColor: '#D1D5DB', // gray-300
+              transition: 'color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out',
+              outlineStyle: 'none',
+              '&:hover': {
+                textDecorationColor: '#F9FAFB', // gray-50
+              },
+            },
           },
         },
       },

@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(https://db.onlinewebfonts.com/c/dbd043e97b74683789e81b6c2cc2ea76?family=Copyright+Klim+Type+Foundry);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
 
 body {
-  font-family: 'Copyright Klim Type Foundry', sans-serif;
+  font-family: var(--font-sans);
+
   line-height: 1.25rem;
   font-size: .9rem;
 }
 
 .mdx-content {
-  font-family: 'Copyright Klim Type Foundry', sans-serif;
+  font-family: var(--font-sans);
+
   line-height: 1.25rem;
   font-size: .9rem;
 }
@@ -42,4 +44,20 @@ figure {
 img {
   width: 100%; /* Make the image responsive */
   height: auto;
+}
+
+/* Add hover state for hyperlinks */
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-neutral-300); /* Default underline color */
+  transition: color 0.2s ease-in-out;
+  outline-style: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-neutral-500); /* Hover underline color */
 }
