@@ -8,10 +8,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Inter } from 'next/font/google'
 
+//if loading variable font then no need to specify the weights
 const inter: Inter = ({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+  subsets: ['latin']
 })
 
 // Define the metadata for the site
