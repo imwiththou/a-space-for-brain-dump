@@ -6,6 +6,14 @@ import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+import { Inter } from 'next/font/google'
+
+const inter: Inter = ({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+})
+
 // Define the metadata for the site
 export const metadata = {
   title: "A space for brain dump",
