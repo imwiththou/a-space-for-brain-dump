@@ -9,7 +9,8 @@ import { Inter } from 'next/font/google'
 
 //if loading variable font then no need to specify the weights
 const inter: Inter({
-  subsets: ['latin']
+  subsets: ['latin'],
+  variable: '--font-inter',
 })
 
 // Define the metadata for the site
