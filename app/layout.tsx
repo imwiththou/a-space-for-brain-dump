@@ -6,6 +6,8 @@ import { Analytics } from "@/components/analytics"
 import { ModeToggle } from "@/components/mode-toggle"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+
+
 // Define the metadata for the site
 export const metadata = {
   title: "A space for brain dump",
