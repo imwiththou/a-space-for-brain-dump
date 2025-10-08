@@ -38,7 +38,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <main className="w-full">
               {children}
               <br />
-              <span className="text-xs uppercase tracking-wide text-slate-400">&copy; Steve 5202. All rights reserved.</span>
+              <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">
+                &copy; Steve 5202. All rights reserved.
+              </span>
             </main>
           </div>
           <Analytics />
