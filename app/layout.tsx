@@ -39,7 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {children}
               <br />
               <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">
-                &copy; Steve 5202. All rights reserved.
+                &copy; Steve 6202. All rights reserved.
               </span>
             </main>
           </div>
