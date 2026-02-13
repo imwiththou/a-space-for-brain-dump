@@ -56,9 +56,9 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
         <Link
           key={page}
           href={page === 1 ? "/" : `/page/${page}`}
-          className={`w-9 h-9 flex items-center justify-center text-sm font-medium no-underline transition ${
+          className={`w-9 h-9 flex items-center justify-center text-sm font-medium no-underline rounded-full transition ${
             page === currentPage
-              ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800 rounded-full"
+              ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800"
               : "hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
         >
