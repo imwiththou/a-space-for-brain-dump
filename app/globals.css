@@ -47,26 +47,26 @@ a {
   color: inherit;
   text-decoration-line: underline;
   text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--color-neutral-300); /* Default underline color */
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, 0.15); /* Default underline color - light */
   transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
   outline-style: none;
 }
 
 a:hover {
   text-decoration-line: underline;
-  text-decoration-color: var(--color-neutral-500); /* Hover underline color */
+  text-decoration-color: rgba(0, 0, 0, 0.5); /* Hover underline color - darker */
 }
 
 /* Ensure headings inside links inherit text-decoration */
 a h4 {
-  text-decoration-line: underline;
+  text-decoration-line: underline !important;
   text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--color-neutral-300);
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, 0.15) !important;
   transition: text-decoration-color 0.2s ease-in-out;
 }
 
 a:hover h4 {
-  text-decoration-color: var(--color-neutral-500);
+  text-decoration-color: rgba(0, 0, 0, 0.5) !important;
 }
