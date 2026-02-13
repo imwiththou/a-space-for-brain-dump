@@ -29,9 +29,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-2">
-                  <Link href="/" className="px-3 py-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Home</Link>
-                  <Link href="/about" className="px-3 py-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">About</Link>
-                  <Link href="/quotes" className="px-3 py-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Quotes</Link>
+                  <Link href="/" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Home</Link>
+                  <Link href="/about" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">About</Link>
+                  <Link href="/quotes" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Quotes</Link>
                 </nav>
               </div>
             </header>
