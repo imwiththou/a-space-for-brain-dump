@@ -57,3 +57,16 @@ a:hover {
   text-decoration-line: underline;
   text-decoration-color: var(--color-neutral-500); /* Hover underline color */
 }
+
+/* Ensure headings inside links inherit text-decoration */
+a h4 {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-neutral-300);
+  transition: text-decoration-color 0.2s ease-in-out;
+}
+
+a:hover h4 {
+  text-decoration-color: var(--color-neutral-500);
+}
