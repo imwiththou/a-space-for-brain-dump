@@ -57,3 +57,14 @@ a:hover {
   text-decoration-line: underline;
   text-decoration-color: var(--color-neutral-500); /* Hover underline color */
 }
+
+/* Interactive title styling for posts */
+.post-title {
+  text-decoration-color: var(--color-neutral-300);
+  transition: text-decoration-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.post-title:hover {
+  text-decoration-color: var(--color-neutral-500);
+}
