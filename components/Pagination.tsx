@@ -30,7 +30,7 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
       {currentPage > 1 && (
         <Link
           href={currentPage === 2 ? "/" : `/page/${currentPage - 1}`}
-          className="px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          className="px-3 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           ← Previous
         </Link>
@@ -41,7 +41,7 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
         <>
           <Link
             href="/"
-            className="px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            className="px-3 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           >
             1
           </Link>
@@ -56,10 +56,10 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
         <Link
           key={page}
           href={page === 1 ? "/" : `/page/${page}`}
-          className={`px-3 py-2 rounded-md text-sm font-medium transition ${
+          className={`px-3 py-2 text-sm font-medium transition ${
             page === currentPage
-              ? "bg-blue-600 text-white border border-blue-600"
-              : "border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800"
+              ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800"
+              : "hover:bg-gray-100 dark:hover:bg-gray-800"
           }`}
         >
           {page}
@@ -74,7 +74,7 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
           )}
           <Link
             href={`/page/${totalPages}`}
-            className="px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+            className="px-3 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition"
           >
             {totalPages}
           </Link>
@@ -85,7 +85,7 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
       {currentPage < totalPages && (
         <Link
           href={`/page/${currentPage + 1}`}
-          className="px-3 py-2 rounded-md text-sm font-medium border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+          className="px-3 py-2 text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition"
         >
           Next →
         </Link>
