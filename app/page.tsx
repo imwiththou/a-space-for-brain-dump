@@ -15,8 +15,8 @@ export default function Home() {
     <div className="space-y-4 prose dark:prose-invert">
       {sortedPosts.map((post) => (
         <article key={post._id}>
-          <Link href={post.slug}>
-            <h4>{post.title}</h4>
+          <Link href={post.slug} className="no-underline">
+            <h4 className="underline decoration-gray-300 dark:decoration-gray-600 hover:decoration-gray-500 dark:hover:decoration-gray-400 transition-all">{post.title}</h4>
           </Link>
           {post.description && 
           <p className="text-sm">{post.description}</p> 
