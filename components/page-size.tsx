@@ -16,7 +16,7 @@ export function PageSize() {
 
   return (
     <span className="text-xs text-slate-400">
-      {" · "}Page size: {size} KiB
+      {"♻"}Page size: {size} KiB
     </span>
   )
 }
