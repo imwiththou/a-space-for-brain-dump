@@ -1,10 +1,6 @@
 // Purpose: The layout component that wraps around all pages.
 import Link from "next/link"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Analytics } from "@/components/analytics"
-import { ModeToggle } from "@/components/mode-toggle"
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -21,13 +17,11 @@ interface RootLayoutProps {
 // The layout component
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-3xl mx-auto py-10 px-4">
+        <div className="max-w-3xl mx-auto py-10 px-4">
             <header className="w-full">
               <div className="flex items-center justify-between">
-                <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-2">
                   <Link href="/" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Home</Link>
                   <Link href="/about" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">About</Link>
@@ -42,10 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 &copy; Steve 6202. All rights reserved.
               </span>
             </main>
-          </div>
-          <Analytics />
-          <SpeedInsights />
-        </ThemeProvider>
+        </div>
       </body>
     </html>
   )
