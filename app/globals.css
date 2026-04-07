@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   font-size: 1.1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
 .mdx-content {
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   font-size: 1.1rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
 }
 
 .video_wrapper {

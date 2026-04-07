@@ -1,9 +1,6 @@
-"use client"
+// Simplified theme provider for basic dark mode support
+// Dark mode is now handled by system preferences through CSS only
 
-import * as React from "react"
-import { ThemeProvider as NextThemesProvider } from "next-themes"
-import type { ThemeProviderProps } from "next-themes/dist/types"
-
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  return children
 }
