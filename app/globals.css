@@ -19,7 +19,14 @@ body {
 }
 
 p {
+  margin-top: 1.5rem;
   margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .video_wrapper {
