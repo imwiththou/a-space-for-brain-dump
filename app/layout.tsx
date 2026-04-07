@@ -1,6 +1,7 @@
 // Purpose: The layout component that wraps around all pages.
 import Link from "next/link"
 import "./globals.css"
+import { PageSize } from "@/components/page-size"
 
 
 
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <br />
               <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">
                 &copy; Steve 6202. All rights reserved.
+                <PageSize />
               </span>
             </main>
         </div>
