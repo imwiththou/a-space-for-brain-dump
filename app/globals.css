@@ -11,6 +11,10 @@ body {
   :root {
     color-scheme: dark;
   }
+  
+  ul li::marker {
+    color: rgba(255, 255, 255, 0.5); /* Dark marker color */
+  }
 }
 
 .mdx-content {
@@ -34,12 +38,9 @@ li {
   line-height: 1.8rem;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 ul li::marker {
   content: "-";
+  color: rgba(0, 0, 0, 0.5); /* Light marker color */
 }
 
 ol li {

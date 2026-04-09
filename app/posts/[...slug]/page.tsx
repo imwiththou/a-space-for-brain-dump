@@ -3,6 +3,9 @@ import { allPosts } from "contentlayer/generated"
 import { Metadata } from "next"
 import { Mdx } from "@/components/mdx-components"
 
+// Enable ISR: revalidate every hour (3600 seconds)
+export const revalidate = 3600
+
 interface PostProps {
   params: {
     slug: string[]

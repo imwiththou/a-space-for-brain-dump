@@ -1,11 +1,12 @@
 import Link from "next/link"
+import { memo } from "react"
 
 interface PaginationProps {
   currentPage: number
   totalPages: number
 }
 
-export function Pagination({ currentPage, totalPages }: PaginationProps) {
+function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const maxVisible = 5
   let visiblePages: number[]
@@ -93,3 +94,5 @@ export function Pagination({ currentPage, totalPages }: PaginationProps) {
     </nav>
   )
 }
+
+export const Pagination = memo(PaginationComponent)
