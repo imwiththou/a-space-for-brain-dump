@@ -95,7 +95,7 @@ a:hover {
 /* Ensure headings inside links inherit text-decoration */
 a h4 {
   text-decoration-line: underline !important;
-  font-weight: semi-bold;
+  font-weight: bold;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
   text-decoration-color: rgba(0, 0, 0, 0.15) !important;
