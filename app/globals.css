@@ -35,7 +35,11 @@ li {
 }
 
 ul li {
-  list-style-type: disc;
+  list-style-type: none;
+}
+
+ul li::marker {
+  content: "-";
 }
 
 ol li {
