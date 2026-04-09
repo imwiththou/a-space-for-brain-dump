@@ -40,7 +40,7 @@ export default function PostsPage({
         {paginatedPosts.map((post) => (
           <article key={post._id}>
             <Link href={post.slug}>
-              <h4>{post.title}</h4>
+              <h3>{post.title}</h3>
             </Link>
             {post.description && 
             <p className="text-sm">{post.description}</p> 
