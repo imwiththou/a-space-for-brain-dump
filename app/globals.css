@@ -12,8 +12,8 @@ body {
     color-scheme: dark;
   }
 
-  ul li::marker {
-    content: "-";
+  ul li::marker,
+  ol li::marker {
     color: rgba(255, 255, 255, 0.5); /* Light marker color for dark mode */
   }
 }
@@ -28,10 +28,18 @@ p {
   margin-bottom: 1.2rem;
 }
 
-ul, ol {
+ul {
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
   margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1.5rem;
+  list-style-type: decimal;
 }
 
 li {
@@ -39,13 +47,9 @@ li {
   line-height: 1.8rem;
 }
 
-ul li::marker {
-  content: "-";
+ul li::marker,
+ol li::marker {
   color: rgba(0, 0, 0, 0.5); /* Dark marker color for light mode */
-}
-
-ol li {
-  list-style-type: decimal;
 }
 
 h1 {
