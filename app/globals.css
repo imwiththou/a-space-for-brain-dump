@@ -11,9 +11,10 @@ body {
   :root {
     color-scheme: dark;
   }
-  
+
   ul li::marker {
-    color: rgba(255, 255, 255, 0.5); /* Dark marker color */
+    content: "-";
+    color: rgba(255, 255, 255, 0.5); /* Light marker color for dark mode */
   }
 }
 
@@ -40,7 +41,7 @@ li {
 
 ul li::marker {
   content: "-";
-  color: rgba(0, 0, 0, 0.5); /* Light marker color */
+  color: rgba(0, 0, 0, 0.5); /* Dark marker color for light mode */
 }
 
 ol li {
