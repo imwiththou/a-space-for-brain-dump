@@ -11,6 +11,11 @@ body {
   :root {
     color-scheme: dark;
   }
+
+  ul li::marker {
+    content: "-";
+    color: rgba(255, 255, 255, 0.5); /* Light marker color for dark mode */
+  }
 }
 
 .mdx-content {
@@ -23,8 +28,28 @@ p {
   margin-bottom: 1.2rem;
 }
 
+ul, ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8rem;
+}
+
+ul li::marker {
+  content: "-";
+  color: rgba(0, 0, 0, 0.5); /* Dark marker color for light mode */
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -76,6 +101,7 @@ a:hover {
 /* Ensure headings inside links inherit text-decoration */
 a h4 {
   text-decoration-line: underline !important;
+  font-weight: bold;
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
   text-decoration-color: rgba(0, 0, 0, 0.15) !important;

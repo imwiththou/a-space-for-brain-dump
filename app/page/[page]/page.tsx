@@ -4,6 +4,9 @@ import { Pagination } from "@/components/Pagination"
 import { getPaginatedPosts, POSTS_PER_PAGE } from "@/lib/pagination"
 import { notFound } from "next/navigation"
 
+// Enable ISR: revalidate every hour (3600 seconds)
+export const revalidate = 3600
+
 export async function generateStaticParams() {
   const { totalPages } = getPaginatedPosts(allPosts, 1)
   
@@ -40,7 +43,7 @@ export default function PostsPage({
         {paginatedPosts.map((post) => (
           <article key={post._id}>
             <Link href={post.slug}>
-              <h4>{post.title}</h4>
+              <h3>{post.title}</h3>
             </Link>
             {post.description && 
             <p className="text-sm">{post.description}</p> 
