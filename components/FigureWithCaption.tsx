@@ -18,7 +18,7 @@ const FigureWithCaption: React.FC<FigureWithCaptionProps> = ({ src, alt, caption
           decoding="async"
         />
         <figcaption
-          className="pt-1 text-left text-xs w-full bg-transparent dark:bg-transparent"
+          className="pt-1 pb-4 text-left text-xs w-full bg-transparent dark:bg-transparent"
           dangerouslySetInnerHTML={{ __html: caption }}
         />
       </figure>
