@@ -115,3 +115,19 @@ a h4 {
 a:hover h4 {
   text-decoration-color: rgba(0, 0, 0, 0.5) !important;
 }
+
+blockquote {
+  color: #4b5563; /* Dark grey */
+  border-left: 2px solid #4b5563; /* Thin vertical line */
+  padding-left: 1.5rem;
+  margin-left: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    color: #a0a9b8; /* Lighter grey for dark mode */
+    border-left-color: #a0a9b8;
+  }
+}
