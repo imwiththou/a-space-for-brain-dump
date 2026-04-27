@@ -1,9 +1,7 @@
 // Purpose: The layout component that wraps around all pages.
 import Link from "next/link"
 import "./globals.css"
-import dynamic from "next/dynamic"
-
-const PageSize = dynamic(() => import("@/components/page-size").then(mod => ({ default: mod.PageSize })), { ssr: false })
+import { PageSize } from "@/components/page-size"
 
 
 
