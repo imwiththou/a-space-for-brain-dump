@@ -24,16 +24,16 @@ body {
 }
 
 .mdx-content table {
+  @apply bg-zinc-100 dark:bg-zinc-800;
   display: block;
   width: 100%;
   overflow-x: auto;
   border-collapse: collapse;
-  margin-top: 1.75rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
-  padding: 0.55rem 0.9rem;
-  border-radius: 0.375rem;
-  background: rgba(15, 23, 42, 0.035);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
 }
 
 .mdx-content thead {
@@ -173,7 +173,7 @@ blockquote p {
   }
 
   .mdx-content table {
-    background: rgba(255, 255, 255, 0.045);
+    @apply bg-zinc-800;
   }
 
   .mdx-content thead {
