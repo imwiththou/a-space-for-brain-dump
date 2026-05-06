@@ -1,0 +1,26 @@
+name: Post new blog entries to Bluesky
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bluesky:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install gray-matter @atproto/api
+
+      - run: node scripts/post-to-bluesky.js
+        env:
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
