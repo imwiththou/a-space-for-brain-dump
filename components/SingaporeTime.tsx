@@ -23,7 +23,7 @@ function getOffsetCopy(readerOffsetHours: number) {
   const hourDifference = readerOffsetHours - SINGAPORE_UTC_OFFSET_HOURS
 
   if (hourDifference === 0) {
-    return "you are in the same time as me"
+    return "you are in the same timezone with me"
   }
 
   const direction = hourDifference > 0 ? "ahead of" : "behind"
@@ -62,7 +62,7 @@ export default function SingaporeTime() {
 
   const readerOffsetCopy = useMemo(() => {
     if (!now) {
-      return "calculating your distance from Singapore time"
+      return "calculating how far you are from me"
     }
 
     return getOffsetCopy(getReaderOffsetHours())
