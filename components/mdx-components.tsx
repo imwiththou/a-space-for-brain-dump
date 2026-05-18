@@ -2,11 +2,13 @@ import Image from "next/image"
 import { useMDXComponent } from "next-contentlayer/hooks"
 import FigureWithCaption from "./FigureWithCaption"
 import AudioPlayer from "./AudioPlayer"
+import SingaporeTime from "./SingaporeTime"
 
 const components = {
   Image,
   FigureWithCaption,
   AudioPlayer,
+  SingaporeTime,
 }
 
 interface MdxProps {
