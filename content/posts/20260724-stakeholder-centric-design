@@ -1,0 +1,216 @@
+---
+title: From user-centric to stakeholder-centric design
+description: The biggest issue in UX design is not about thi interface anymore.
+date: "2026-07-24"
+---
+
+There is a scene that repeats itself in product organisations more often than many people outside the industry realise.
+
+A design review is taking place. The design team has spent weeks understanding the problem, interviewing users, analysing behaviour, evaluating competing solutions and refining the interface through multiple iterations. By the time the work reaches a review, every decision has a rationale. Every interaction has a purpose.
+
+Then someone senior in the room pauses on a particular screen.
+
+> "I don't understand what this icon means."
+
+For a brief moment, the room is silent.
+
+Then comes the conclusion.
+
+> "Our users probably won't understand it either."
+
+No user research is referenced. No usability study is revisited. No behavioural data is consulted. The discussion quietly shifts away from understanding users and towards reassuring the stakeholder. Eventually, the design changes, not because the evidence changed, but because the organisational hierarchy did.
+
+For many experienced UX designers, moments like these provoke an uncomfortable question: who are we designing for?
+
+## What happened to user-centred design?
+
+After seeing versions of this conversation across organisations of different sizes and industries, I no longer think they're isolated incidents. They may point to something larger.
+
+Perhaps the golden age of UX wasn't simply about better interfaces. Perhaps it was the brief period when businesses genuinely believed that understanding users was itself a competitive advantage.
+
+If that's true, then the more interesting question isn't whether individual organisations have forgotten the value of UX.
+
+It's **why**.
+
+
+## Experience design is becoming a business strategy because it's fashionable
+
+The foundations of user-centred design were established decades before smartphones, through pioneers such as Don Norman, Bill Moggridge and many others. But it's difficult to discuss the rise of UX without acknowledging Apple and, in particular, Steve Jobs.
+
+Before the iPhone, technology companies largely competed on capability. Marketing focused on processor speeds, storage capacity, camera specifications and feature lists. Products were compared by what they could do rather than how they felt to use.
+
+The iPhone changed that conversation.
+
+Its success demonstrated that experience itself could be a product feature. Customers were willing to pay a premium not simply because the technology was better, but because using it felt intuitive, coherent and even enjoyable.
+
+That lesson reached far beyond Apple.
+
+Businesses began investing in UX teams, usability testing, interaction design, service design and design systems. Design thinking entered boardrooms. User research became a legitimate business activity. Organisations that once treated design as decoration started treating it as strategy.
+
+For perhaps the first time on a global scale, businesses recognised that experience could create commercial value.
+
+UX didn't rise because designers suddenly became more talented.
+
+It rose because businesses believed understanding users was good business.
+
+
+## Success has an unexpected consequence
+
+But there may be another reason UX feels less influential today.
+
+Perhaps it succeeded.
+
+Over the past two decades, digital interaction patterns have become remarkably consistent. People instinctively understand pinch-to-zoom, swipe gestures and pull-to-refresh. A magnifying glass means search. A shopping cart means purchases. A gear means settings.
+
+These conventions no longer stand out because they've become part of the shared language of digital products.
+
+Good usability became invisible.
+
+That's what success looks like.
+
+Users no longer choose a banking app because its buttons respond smoothly or its navigation is consistent. They simply expect those things. Accessibility, responsive layouts and coherent navigation have become baseline expectations rather than competitive advantages.
+
+As markets matured, businesses naturally shifted their attention elsewhere. Competitive advantage increasingly became associated with speed of delivery, operational efficiency, artificial intelligence, subscription growth and shareholder returns.
+
+Experience remained important.
+
+It just stopped being the headline.
+
+
+## Mature products don't necessarily mean mature organisations
+
+Digital products have matured but many organisations haven't. Despite employing talented designers and researchers, product decisions in many companies are still shaped more by organisational hierarchy than by user evidence.
+
+Consider the humble gear icon: today it's one of the most widely recognised symbols in computing. Across Windows, macOS, Android, iOS and countless websites, users have repeatedly learnt that it represents settings.
+
+Its meaning isn't obvious because gears naturally suggest configuration. Its meaning comes from repeated exposure. Yet it's still common to hear someone say:
+
+> "I don't understand what this icon means. Our users probably won't understand it either. Let's add a label."
+
+At first glance, this appears to be a discussion about iconography.
+
+It isn't.
+
+It's a discussion about **how do we know what users know** and it's epistemological.
+
+The reasoning usually follows a familiar pattern: 
+
+1. I don't understand this.
+2. Therefore users won't understand it either.
+
+From a human perspective, that's perfectly understandable. We all project our own experience when information is incomplete.
+
+But UX exists precisely because personal intuition is often an unreliable substitute for observing actual users.
+
+The discipline was never built on asking:
+
+> *What do I think?*
+
+It was built on asking:
+
+> *What evidence do we have?*
+
+
+## When user-centric design becomes stakeholder-centric design
+
+There's nothing wrong with stakeholders having opinions.
+
+Experienced executives often understand markets, regulation, commercial constraints and organisational realities far better than designers do.
+
+The problem begins when opinions become substitutes for evidence instead of hypotheses to test.
+
+An executive may believe users prefer a particular interaction. A designer may disagree. That's fine because neither position should automatically win because of job title or professional discipline.
+
+Both should become questions that research, analytics or usability testing can answer.
+
+Yet that's often not what's happening. Instead of reducing friction for users, teams begin reducing uncertainty for stakeholders. That's a fundamentally different design philosophy.
+
+User-centric design asks:
+
+> **What helps users accomplish their goals?**
+
+Stakeholder-centric design asks:
+
+> **What makes decision-makers feel confident about the product?**
+
+Sometimes those questions lead to the same answer, often they don't. That difference explains why so many designers leave review meetings feeling frustrated despite producing thoughtful, evidence-based work.
+
+## The promise we were given
+
+Most designers enter the profession believing they'll become advocates for users, we are the "voice of users".
+
+Design education teaches us to question assumptions, validate decisions through research and understand people before proposing solutions.
+
+However the reality intervenes fast, deadlines outweigh discovery, politics outweigh evidence and consensus outweighs insight. Over time, many designers would stop asking "What's the right solution?" but "Which solution is most likely to survive the stakeholder walkthrough?"
+
+And it's damn sad to see this happening daily.
+
+## Expertise isn't the same as authority
+
+People often argue that design simply needs "a seat at the table." I'm no longer convinced that's the real challenge.
+
+Many designers already have seats at the table. They attend strategic meetings, present research, contribute to roadmap discussions and business planning.
+
+Yet they still discover that the important decisions were already made before the meeting started, top-down decisions coming directly from authorities.
+
+Expertise and authority are not the same thing.
+
+A researcher may possess the strongest evidence in the room while having the least influence over the final decision. That's why successful design organisations almost always share one characteristic that, someone in leadership genuinely believes that understanding users contributes to business success, and consistently allows evidence to influence decisions.
+
+Without that cultural foundation, UX becomes advisory rather than influential.
+
+## A philosophy, not just opinions
+
+Steve Jobs was famously opinionated but his opinions weren't arbitrary. They emerged from a coherent philosophy about simplicity, craftsmanship, integration and the relationship between technology and human behaviour.
+
+That's very different from organisations where design decisions simply reflect whoever spoke last.
+
+One executive dislikes whitespace, another dislikes icons, another wants larger buttons, probably another wants more features because competitors have them.
+
+Individually, each opinion may seem reasonable. Collectively, they often produce products that feel inconsistent because they lack a unifying philosophy.
+
+Jobs' real legacy was that his intuition consistently served a clear vision of the user experience.
+
+
+## The hardest UX problem isn't the interface anymore
+
+I don't think UX is disappearing. I think its centre of gravity has shifted.
+
+Twenty years ago the hardest challenge was designing better interfaces. Today the hardest challenge is designing better decisions.
+
+Creating usable interfaces has become easier than ever. Design systems provide reusable components. Platform guidelines encourage consistency. AI is beginning to generate layouts that would have taken designers hours only a few years ago.
+
+The difficult questions now are organisational.
+
+- Who decides?
+
+- Which evidence matters?
+
+- How should intuition be weighed against research?
+
+- How should user needs be balanced against commercial priorities?
+
+- How should trust be maintained as products become increasingly autonomous?
+
+Perhaps the future of UX depends less on designing individual screens and more on designing the processes through which organisations make product decisions.
+
+
+## An open question
+
+Perhaps every profession experiences a period during which its ideals are most visible.
+
+Architecture had modernism. Industrial design had the Bauhaus.
+
+UX may one day be remembered for the years following the iPhone, when businesses briefly discovered that understanding people could itself become a competitive advantage.
+
+If that period has passed, then perhaps the challenge facing designers today isn't simply to create better interfaces.
+
+It's to remind organisations why user-centric thinking mattered in the first place.
+
+Technology will continue to evolve, as it always has. The more important question is whether the way organisations make product decisions evolves with it.
+
+Maybe the golden age of UX was never really about beautifully crafted interfaces.
+
+Maybe it was the brief moment when businesses believed that understanding users was one of the most valuable things a product organisation could do.
+
+Whether that belief has disappeared, or is simply waiting for another technological shift to remind us of its importance, remains an open question.
