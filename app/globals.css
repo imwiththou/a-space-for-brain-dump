@@ -1,17 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  line-height: 1.25rem;
-  font-size: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  ul li::marker,
+  ol li::marker {
+    color: rgba(255, 255, 255, 0.5); /* Light marker color for dark mode */
+  }
 }
 
 .mdx-content {
-  line-height: 1.25rem;
-  font-size: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.mdx-content table {
+  @apply bg-zinc-100 dark:bg-zinc-800;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.mdx-content thead {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mdx-content tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mdx-content tbody tr:last-child {
+  border-bottom: none;
+}
+
+.mdx-content th,
+.mdx-content td {
+  padding: 0.75rem 1rem 0.75rem 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.mdx-content th {
+  font-weight: 600;
+}
+
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8rem;
+}
+
+ul li::marker,
+ol li::marker {
+  color: rgba(0, 0, 0, 0.5); /* Dark marker color for light mode */
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .video_wrapper {
@@ -47,13 +127,60 @@ a {
   color: inherit;
   text-decoration-line: underline;
   text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--color-neutral-300); /* Default underline color */
-  transition: color 0.2s ease-in-out;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, 0.15); /* Default underline color - light */
+  transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
   outline-style: none;
 }
 
 a:hover {
   text-decoration-line: underline;
-  text-decoration-color: var(--color-neutral-500); /* Hover underline color */
+  text-decoration-color: rgba(0, 0, 0, 0.5); /* Hover underline color - darker */
+}
+
+/* Ensure headings inside links inherit text-decoration */
+a h4 {
+  text-decoration-line: underline !important;
+  font-weight: bold;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, 0.15) !important;
+  transition: text-decoration-color 0.2s ease-in-out;
+}
+
+a:hover h4 {
+  text-decoration-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+blockquote {
+  color: #4b5563; /* Dark grey */
+  border-left: 2px solid #4b5563; /* Thin vertical line */
+  padding-left: 1.5rem;
+  margin-left: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+blockquote p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote {
+    color: #a0a9b8; /* Lighter grey for dark mode */
+    border-left-color: #a0a9b8;
+  }
+
+  .mdx-content table {
+    @apply bg-zinc-800;
+  }
+
+  .mdx-content thead {
+    border-bottom-color: rgba(255, 255, 255, 0.14);
+  }
+
+  .mdx-content tbody tr {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
 }

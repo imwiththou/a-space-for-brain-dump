@@ -7,41 +7,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./content/**/*.{md,mdx}",
   ],
-  darkMode: ["class"],
+  darkMode: ["media"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            blockquote: {
-              fontStyle: "normal",
-              fontWeight: "light",
-              color: "text-gray-600",
-              blockquote:{
-                borderLeftWidth: '2px',
-              },
-            },
-            'blockquote p:first-of-type::before': false,
-            'blockquote p:last-of-type::after': false,
-            a: {
-              color: 'inherit',
-              textDecorationLine: 'underline',
-              textUnderlineOffset: '2px',
-              textDecorationThickness: '2px',
-              textDecorationColor: '#D1D5DB', // gray-300
-              transition: 'color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out',
-              outlineStyle: 'none',
-              '&:hover': {
-                textDecorationColor: '#6b7280', // gray-500
-              },
-            },
-          },
-        },
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'sans-serif'],
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 }
