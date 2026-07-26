@@ -98,6 +98,12 @@ ol li::marker {
   line-height: 1.2;
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
 .mdx-content h1 {
   font-size: 1.5rem;
   margin-top: 2.5rem;
