@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { allPosts } from "@/.contentlayer/generated"
 import Link from "next/link"
 import { Pagination } from "@/components/Pagination"
@@ -27,3 +28,5 @@ export default function Home() {
     </>
   )
 }
+=======
+>>>>>>> 3a9a8c8 (rebase)
