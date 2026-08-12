@@ -1,12 +1,11 @@
 import Link from "next/link"
-import { memo } from "react"
 
 interface PaginationProps {
   currentPage: number
   totalPages: number
 }
 
-function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
+export function Pagination({ currentPage, totalPages }: PaginationProps) {
   const pages = Array.from({ length: totalPages }, (_, i) => i + 1)
   const maxVisible = 5
   let visiblePages: number[]
@@ -27,7 +26,6 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
 
   return (
     <nav className="flex items-center justify-center gap-2 mt-8 mb-8">
-      {/* Previous button */}
       {currentPage > 1 && (
         <Link
           href={currentPage === 2 ? "/" : `/page/${currentPage - 1}`}
@@ -37,7 +35,6 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
         </Link>
       )}
 
-      {/* First page if not visible */}
       {visiblePages[0] > 1 && (
         <>
           <Link
@@ -52,7 +49,6 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
         </>
       )}
 
-      {/* Page numbers */}
       {visiblePages.map((page) => (
         <Link
           key={page}
@@ -67,7 +63,6 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
         </Link>
       ))}
 
-      {/* Last page if not visible */}
       {visiblePages[visiblePages.length - 1] < totalPages && (
         <>
           {visiblePages[visiblePages.length - 1] < totalPages - 1 && (
@@ -82,7 +77,6 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
         </>
       )}
 
-      {/* Next button */}
       {currentPage < totalPages && (
         <Link
           href={`/page/${currentPage + 1}`}
@@ -94,5 +88,3 @@ function PaginationComponent({ currentPage, totalPages }: PaginationProps) {
     </nav>
   )
 }
-
-export const Pagination = memo(PaginationComponent)

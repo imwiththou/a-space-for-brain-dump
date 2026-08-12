@@ -1,18 +1,16 @@
-import React from 'react';
-
 interface FigureWithCaptionProps {
-  src: string;
-  alt: string;
-  caption: string;
+  src: string
+  alt: string
+  caption: string
 }
 
-const FigureWithCaption: React.FC<FigureWithCaptionProps> = ({ src, alt, caption }) => {
+export default function FigureWithCaption({ src, alt, caption }: FigureWithCaptionProps) {
   return (
     <div className="figure-container">
       <figure className="rounded-md bg-transparent dark:bg-transparent">
-        <img 
-          className="rounded-md shadow-xl" 
-          src={src} 
+        <img
+          className="rounded-md shadow-xl"
+          src={src}
           alt={alt}
           loading="lazy"
           decoding="async"
@@ -23,7 +21,5 @@ const FigureWithCaption: React.FC<FigureWithCaptionProps> = ({ src, alt, caption
         />
       </figure>
     </div>
-  );
-};
-
-export default FigureWithCaption;
+  )
+}
