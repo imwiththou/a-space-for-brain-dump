@@ -1,28 +1,15 @@
-import { allPosts } from "@/.contentlayer/generated"
-import Link from "next/link"
 import { Pagination } from "@/components/Pagination"
+import { PostList } from "@/components/PostList"
 import { getPaginatedPosts } from "@/lib/pagination"
 
+export const revalidate = 3600
+
 export default function Home() {
-  const { paginatedPosts, totalPages } = getPaginatedPosts(allPosts, 1)
+  const { paginatedPosts, totalPages } = getPaginatedPosts(1)
 
   return (
     <>
-      <div className="space-y-4 prose dark:prose-invert">
-        {paginatedPosts.map((post) => (
-          <article key={post._id}>
-            <Link href={post.slug}>
-              <h4>{post.title}</h4>
-            </Link>
-            {post.description && 
-            <p className="text-sm">{post.description}</p> 
-            }
-            {post.date && 
-            <p className="text-xs text-grey-900 text-opacity-50 dark:text-slate-400 uppercase">{new Date(post.date).toDateString()}</p>
-            }
-          </article>
-        ))}
-      </div>
+      <PostList posts={paginatedPosts} />
       {totalPages > 1 && <Pagination currentPage={1} totalPages={totalPages} />}
     </>
   )

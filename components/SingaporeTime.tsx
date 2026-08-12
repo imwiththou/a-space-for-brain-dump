@@ -1,9 +1,18 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 
 const SINGAPORE_TIME_ZONE = "Asia/Singapore"
 const SINGAPORE_UTC_OFFSET_HOURS = 8
+
+const timeFormatter = new Intl.DateTimeFormat("en-SG", {
+  hour: "numeric",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: true,
+  timeZone: SINGAPORE_TIME_ZONE,
+  timeZoneName: "short",
+})
 
 function getReaderOffsetHours() {
   return -new Date().getTimezoneOffset() / 60
@@ -33,40 +42,18 @@ function getOffsetCopy(readerOffsetHours: number) {
 }
 
 export default function SingaporeTime() {
-  const [now, setNow] = useState<Date | null>(null)
+  const [singaporeTime, setSingaporeTime] = useState("--:--:--")
+  const [readerOffsetCopy] = useState(() => getOffsetCopy(getReaderOffsetHours()))
 
   useEffect(() => {
-    setNow(new Date())
+    const updateTime = () => setSingaporeTime(timeFormatter.format(new Date()))
 
-    const interval = window.setInterval(() => {
-      setNow(new Date())
-    }, 1000)
+    updateTime()
+
+    const interval = window.setInterval(updateTime, 1000)
 
     return () => window.clearInterval(interval)
   }, [])
-
-  const singaporeTime = useMemo(() => {
-    if (!now) {
-      return "--:--:--"
-    }
-
-    return new Intl.DateTimeFormat("en-SG", {
-      hour: "numeric",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-      timeZone: SINGAPORE_TIME_ZONE,
-      timeZoneName: "short",
-    }).format(now)
-  }, [now])
-
-  const readerOffsetCopy = useMemo(() => {
-    if (!now) {
-      return "calculating how far you are from me"
-    }
-
-    return getOffsetCopy(getReaderOffsetHours())
-  }, [now])
 
   return (
     <section className="not-prose my-10 border-y border-zinc-200 py-6 text-zinc-800 dark:border-zinc-700 dark:text-zinc-100">

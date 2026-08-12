@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body,
+.mdx-content {
   line-height: 1.8rem;
   font-size: 1.1rem;
 }
@@ -16,11 +17,6 @@ body {
   ol li::marker {
     color: rgba(255, 255, 255, 0.5); /* Light marker color for dark mode */
   }
-}
-
-.mdx-content {
-  line-height: 1.8rem;
-  font-size: 1.1rem;
 }
 
 .mdx-content table {

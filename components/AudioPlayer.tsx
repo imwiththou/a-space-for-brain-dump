@@ -61,11 +61,15 @@ export default function AudioPlayer({ src, label = "Audio track" }: AudioPlayerP
 
       const step = Math.max(1, Math.floor(data.length / 12))
       const nextWaveform = Array.from({ length: 12 }, (_, index) => {
-        const slice = data.slice(index * step, (index + 1) * step)
-        const average =
-          slice.reduce((sum, value) => sum + value, 0) / Math.max(1, slice.length)
+        const start = index * step
+        const end = Math.min(start + step, data.length)
+        let sum = 0
 
-        return Math.max(0.12, average / 255)
+        for (let i = start; i < end; i++) {
+          sum += data[i]
+        }
+
+        return Math.max(0.12, sum / (end - start) / 255)
       })
 
       setWaveform(nextWaveform)
