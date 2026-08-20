@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main className="w-full">
+            <main className="w-full pt-24">
               {children}
               <br />
               <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">
