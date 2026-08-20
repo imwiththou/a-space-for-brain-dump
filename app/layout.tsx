@@ -21,7 +21,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50">
         <div className="max-w-3xl mx-auto py-10 px-4">
-            <header className="w-full mb-10">
+            <header className="w-full">
               <div className="flex items-center justify-between">
                 <nav className="ml-auto text-sm font-medium space-x-2">
                   <Link href="/" className="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Home</Link>
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 </nav>
               </div>
             </header>
-            <main className="w-full">
+            <main className="w-full pt-24">
               {children}
               <br />
               <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">

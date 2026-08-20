@@ -49,7 +49,7 @@ export default async function PagePage({ params }: PageProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert">
+    <article className="pb-6 prose dark:prose-invert">
       <h4>{page.title}</h4>
       {page.description && <p className="text-base">{page.description}</p>}
       <hr />
