@@ -12,7 +12,7 @@ This branch is an experiment replacing Next.js and Contentlayer with Astro. It g
 
 ## Work locally
 
-Use Node.js 22.23.4 or newer, as required by the installed Astro release. Install dependencies with `npm ci`, then:
+Use Node.js 24.x, as specified in `package.json` for consistent local and Vercel builds. Install dependencies with `npm ci`, then:
 
 ```sh
 npm run dev       # local development server
@@ -29,7 +29,7 @@ Use existing posts as examples for images, captions and audio. Static assets go 
 
 ## Deploy and maintain
 
-Deploy `dist/` to a static host; set the build command to `npm run build` and the output directory to `dist`. Verify the hosting provider's redirects, trailing-slash handling, cache behavior and custom domain on a preview deployment. Changes to repository content appear only after deployment. This branch does not change the production deployment configuration.
+Deploy `dist/` to a static host; set the build command to `npm run build` and the output directory to `dist`. Verify the hosting provider's redirects, trailing-slash handling, cache behavior and custom domain on a preview deployment. Changes to repository content appear only after deployment. `vercel.json` selects the Astro framework for deployments built from this branch; it overrides the project preset without changing the Vercel dashboard settings.
 
 The project `.npmrc` enables legacy peer dependency resolution; keep it with the lockfile so `npm ci` uses the same resolution. Use `npm ci` and commit `package-lock.json` changes when upgrading dependencies. Review Astro and integration upgrade guides and Node requirements before major upgrades, then run `npm run check` and `npm run build`. Check representative text, image and audio posts, the clock, pagination, metadata, existing URLs and missing-page behavior in a preview. The existing Bluesky workflow references `scripts/post-to-bluesky.js`, but the script is currently at the repository root. Correct and test that existing workflow separately before relying on it.
 
