@@ -20,7 +20,7 @@ jobs:
 
       - run: npm install gray-matter @atproto/api
 
-      - run: node scripts/post-to-bluesky.js
+      - run: node post-to-bluesky.js
         env:
           BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
           BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
