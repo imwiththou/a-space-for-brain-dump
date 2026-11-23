@@ -1,0 +1,13 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import FigureWithCaption from '../../components/FigureWithCaption';
+import AudioPlayer from '../components/AudioPlayer.astro';
+import SingaporeTime from '../components/SingaporeTime.astro';
+export async function getStaticPaths() {
+  return (await getCollection('pages')).map(page => ({ params: { slug: page.id }, props: { page } }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+---
+<Layout title={page.data.title} description={page.data.description}><article class="pb-6 prose dark:prose-invert"><h4>{page.data.title}</h4>{page.data.description && <p class="text-base">{page.data.description}</p>}<hr /><div class="mdx-content"><Content components={{ FigureWithCaption, AudioPlayer, SingaporeTime }} /></div></article></Layout>

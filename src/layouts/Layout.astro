@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+const { title = 'A space for brain dump', description = "Don't take them too seriously, though ideas are extremely fragile." } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{title}</title><meta name="description" content={description} /><link rel="icon" href="/favicon.ico" /></head>
+  <body class="antialiased min-h-screen bg-white dark:bg-black text-slate-950 dark:text-slate-50">
+    <div class="max-w-3xl mx-auto py-10 px-4">
+      <header class="w-full"><div class="flex items-center justify-between"><nav class="ml-auto text-sm font-medium space-x-2">
+        <a href="/" class="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Home</a>
+        <a href="/about" class="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">About</a>
+        <a href="/quotes" class="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Quotes</a>
+      </nav></div></header>
+      <main class="w-full pt-24"><slot /><br /><span class="text-xs uppercase tracking-wide text-slate-400 mb-8">&copy; Steve 6202. All rights reserved.<span id="page-size"></span></span></main>
+    </div>
+    <script>const target = document.getElementById('page-size'); if (target) target.textContent = ` ♻Page size: ${(new TextEncoder().encode(document.documentElement.outerHTML).length / 1024).toFixed(2)} KiB`;</script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+---
+import type { CollectionEntry } from 'astro:content';
+const { posts } = Astro.props as { posts: CollectionEntry<'posts'>[] };
+---
+<div class="space-y-4 prose dark:prose-invert">
+  {posts.map(post => <article><a href={`/posts/${post.id}`}><h4>{post.data.title}</h4></a>{post.data.description && <p class="text-sm">{post.data.description}</p>}<p class="text-xs text-grey-900 text-opacity-50 dark:text-slate-400 uppercase">{post.data.date.toDateString()}</p></article>)}
+</div>
