@@ -8,6 +8,30 @@ body,
   font-size: 1.1rem;
 }
 
+.fine-print,
+.fine-print .mdx-content,
+.fine-print .text-base {
+  color: #475569;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.fine-print .mdx-content h3 {
+  font-size: 1rem;
+}
+
+.fine-print li {
+  line-height: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .fine-print,
+  .fine-print .mdx-content,
+  .fine-print .text-base {
+    color: #cbd5e1;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;

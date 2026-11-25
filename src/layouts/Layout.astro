@@ -12,7 +12,7 @@ const { title = 'A space for brain dump', description = "Don't take them too ser
         <a href="/about" class="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">About</a>
         <a href="/quotes" class="px-4 py-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition no-underline">Quotes</a>
       </nav></div></header>
-      <main class="w-full pt-24"><slot /><br /><span class="text-xs uppercase tracking-wide text-slate-400 mb-8">&copy; Steve 6202. All rights reserved.<span id="page-size"></span></span></main>
+      <main class="w-full pt-24"><slot /><br /><span class="text-xs uppercase tracking-wide text-slate-400 mb-8">&copy; Steve 6202. All rights reserved.<span id="page-size"></span> · <a href="/colophon">Colophon</a> · <a href="/imprint">Imprint</a></span></main>
     </div>
     <script>const target = document.getElementById('page-size'); if (target) target.textContent = ` ♻Page size: ${(new TextEncoder().encode(document.documentElement.outerHTML).length / 1024).toFixed(2)} KiB`;</script>
   </body>
