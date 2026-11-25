@@ -1,0 +1,5 @@
+---
+import AudioPlayer from '../../components/AudioPlayer';
+interface Props { src: string; label?: string }
+---
+<AudioPlayer {...Astro.props} client:load />

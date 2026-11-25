@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Listing from '../../components/Listing.astro';
+import { getPosts, POSTS_PER_PAGE } from '../../lib/posts';
+export async function getStaticPaths() {
+  const total = Math.ceil((await getPosts()).length / POSTS_PER_PAGE);
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+const page = Number(Astro.params.page);
+---
+<Layout title={`Posts - Page ${page}`}><Listing currentPage={page} /></Layout>

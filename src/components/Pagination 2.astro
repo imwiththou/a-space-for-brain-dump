@@ -1,0 +1,15 @@
+---
+const { currentPage, totalPages } = Astro.props as { currentPage: number; totalPages: number };
+const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+const maxVisible = 5;
+const start = totalPages <= maxVisible ? 1 : Math.max(1, Math.min(currentPage - 2, totalPages - maxVisible + 1));
+const visible = pages.slice(start - 1, start - 1 + maxVisible);
+const href = (page: number) => page === 1 ? '/' : `/page/${page}`;
+---
+<nav class="flex items-center justify-center gap-2 mt-8 mb-8" aria-label="Pagination">
+  {currentPage > 1 && <a href={href(currentPage - 1)} class="px-4 py-2 text-sm font-medium no-underline rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">← Previous</a>}
+  {visible[0] > 1 && <><a href="/" class="w-9 h-9 flex items-center justify-center text-sm font-medium no-underline">1</a>{visible[0] > 2 && <span class="px-2 py-2 text-gray-500">…</span>}</>}
+  {visible.map(page => <a href={href(page)} aria-current={page === currentPage ? 'page' : undefined} class:list={['w-9 h-9 flex items-center justify-center text-sm font-medium no-underline rounded-full transition', page === currentPage ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-800' : 'hover:bg-gray-100 dark:hover:bg-gray-800']}>{page}</a>)}
+  {visible[visible.length - 1] < totalPages && <>{visible[visible.length - 1] < totalPages - 1 && <span class="px-2 py-2 text-gray-500">…</span>}<a href={href(totalPages)} class="w-9 h-9 flex items-center justify-center text-sm font-medium no-underline">{totalPages}</a></>}
+  {currentPage < totalPages && <a href={href(currentPage + 1)} class="px-4 py-2 text-sm font-medium no-underline rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">Next →</a>}
+</nav>

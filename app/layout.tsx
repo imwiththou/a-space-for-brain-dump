@@ -36,6 +36,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <span className="text-xs uppercase tracking-wide text-slate-400 mb-8">
                 &copy; Steve 6202. All rights reserved.
                 <PageSize />
+                {" · "}<Link href="/colophon">Colophon</Link>
+                {" · "}<Link href="/imprint">Imprint</Link>
               </span>
             </main>
         </div>
